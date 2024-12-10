@@ -7,11 +7,13 @@ def main():
     shift = 3
 
     text = "Hello world"
-
     encrypted_text = caesar_cipher(text, keyword, shift, encrypt=True)
-    print(f"Encrypted: {encrypted_text}")
-
     decrypted_text = caesar_cipher(encrypted_text, keyword, shift, encrypt=False)
+
+    print(f"Keyword: {keyword}")
+    print(f"Shift: {shift}")
+    print(f"Original: {text}")
+    print(f"Encrypted: {encrypted_text}")
     print(f"Decrypted: {decrypted_text.capitalize()}")
 
 
