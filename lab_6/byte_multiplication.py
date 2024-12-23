@@ -1,4 +1,4 @@
-from galois_multiplication import mul02
+from lab_6.galois_multiplication import mul02
 
 
 def main():
