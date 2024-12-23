@@ -1,4 +1,18 @@
 
+
+def gcd(operand_a, operand_b):
+
+    gcd_result = None
+    smaller = operand_b if operand_a > operand_b else operand_a
+
+    for i in range(1, smaller + 1):
+
+        if operand_a % i == 0 and operand_b % i == 0:
+            gcd_result = i
+
+    return gcd_result
+
+
 def gcd_ex(operand_a, operand_b):
 
     x0, x1 = 1, 0
