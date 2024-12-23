@@ -30,8 +30,10 @@ def mul02(byte):
     Multiply a byte by 02 in GF(2^8) using bit shifting and XOR.
     """
     byte <<= 1  # Shift left (multiply by x)
+
     if byte & 0x100:  # Check if the 8th bit is set (carry)
         byte ^= 0x1B  # Reduce modulo m(x) = 0x1B
+
     return byte & 0xFF  # Ensure the result is a byte
 
 
